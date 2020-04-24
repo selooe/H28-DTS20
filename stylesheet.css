@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /*font diganti*/
+  font-family: "arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(img/bg.jpg);
+  /*background diganti*/
+  background-size: cover;
+  background-position: center;
+  /*posisi background di tengah*/
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(12, 96, 165, 0.801);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.5s;
+  /*Animasi Header*/
+}
+
+header:hover{
+  background-color: rgba(12, 96, 165, 0.9);
+  /*animasi header*/
+}
+
+/*logo our team*/
+.logo {
+  width: 150px;
+  margin-top: 0px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  /*animasi square to circle*/
+  border-radius: 30%;
+}
+
+
+.menu-icon{
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 20%;
+  transition: transform .9s ease;
+  opacity:0.9;
+}
+
+.lesson:hover{
+  cursor:pointer;
+  transform: scale(1.2);
+  opacity:1.0;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  color:white;
+  font-weight:bolder;
+  text-shadow:1px 1px blue;
+  /*Supaya namanya jadi jelas, pake bayangan putih*/
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  /*font diperkecil biar rapih*/
+  font-size: 13px;
+  color: #b3aeb5;
+  /*kalimat di rata kanan kiri*/
+  text-align: justify;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  /*
+  tombol gabung baru
+  */
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 45px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #283966;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  /*pake border pas di klik */
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+/* start modifikasi footer */
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #282828;
+  color: #aba8a8;
+  height: 50vh;
+}
+
+/* bikin 4 kolom footer*/
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*sampe sini*/
+
+.footer-widget {
+	/*background-color: ff9800a1; */
+	margin: 0 10px;
+	text-align: justify;
+}
+
+.footer-widget ul {
+  margin-left: 20px;
+}
+
+.footer-widget ul li {
+  padding-bottom: 14px;
+}
+
+.footer-widget ul li a {
+  color: #aba8a8;
+  text-decoration: none;
+}
+
+/*animasi list category*/
+.footer-widget ul li a:hover {
+  color: #d2d2d2;
+  margin-left: 10px;
+  transition: all .5s ease;
+}
+
+.widget-title {
+	color: #fff;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.about-widget p {
+	line-height: 20px;
+	margin: 10px 0 30px 0;
+}
+
+.cards i {
+	display: inline-block;
+	font-size: 30px;
+	margin-right: 12px;
+}
+
+.about-widget p span {
+  margin-right: 10px;
+}
+
+.social-widget {
+  color: grey;
+}
+
+.social-widget a {
+  display: inline-block;
+  font-size: 28px;
+  color: #aba8a8;
+  margin-right: 10px;
+}
+
+/*animasi icon social*/
+.social-widget a:hover {
+  color: #d2d2d2;
+  transition: all .5s ease;
+}
+
+.service-widget, .information-widget {
+  margin-left: 50px;
+}
+
+.contact-address {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #9a98988c;
+  line-height: 20px;
+}
+
+.contact-number, .contact-email {
+  margin: 10px 0;
+}
+.contact-address i, .contact-number i, .contact-email i {
+  margin-right: 10px;
+}
+
+.copyright p {
+  padding-top: 20px;
+  color: #d2d2d2;
+  text-align: center;
+}
+
+.copyright p a {
+  text-decoration: none;
+  color: #d2d2d2;
+}
+/* akhir modif footer*/
